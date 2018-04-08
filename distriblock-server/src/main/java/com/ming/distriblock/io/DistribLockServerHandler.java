@@ -46,4 +46,10 @@ public class DistribLockServerHandler extends ChannelHandlerAdapter {
         cause.printStackTrace();
         ctx.close();
     }
+
+
+//    @Override
+//    public void channelRegistered(ChannelHandlerContext ctx) throws Exception {
+//        ctx.fireChannelRegistered();
+//    }
 }

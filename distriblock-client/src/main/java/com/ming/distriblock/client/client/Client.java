@@ -1,5 +1,6 @@
 package com.ming.distriblock.client.client;
 
+import com.ming.distriblock.client.client.io.ClientHandler;
 import com.ming.distriblock.core.ObjectHandler;
 import com.ming.distriblock.core.RequestDistrbLockInfo;
 import com.ming.distriblock.core.method.DistribMethod;
@@ -33,7 +34,7 @@ public class Client {
         reqDisLockInfo.setPrimaryId("0x000001");
         DistribMethod distribMethod = new DistribMethod();
         distribMethod.setClassFullName(Client.class.getName());
-        distribMethod.setMethodDescriptor("run");
+        distribMethod.setMethodDesc("run");
         ServiceInstance serviceInstance = new ServiceInstance();
         serviceInstance.setServiceId(serviceId);
         serviceInstance.setAvailable(true);

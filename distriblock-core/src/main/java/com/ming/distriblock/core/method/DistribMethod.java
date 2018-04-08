@@ -20,9 +20,9 @@ public class DistribMethod implements Serializable{
      */
     private String classFullName;
     /**
-     * 方法的描述符
+     * 方法的描述信息(方法名+方法所在class的lineNumber)
      */
-    private String methodDescriptor;
+    private String methodDesc;
 
     public ServiceInstance getServiceInstance() {
         return serviceInstance;
@@ -40,12 +40,12 @@ public class DistribMethod implements Serializable{
         this.classFullName = classFullName;
     }
 
-    public String getMethodDescriptor() {
-        return methodDescriptor;
+    public String getMethodDesc() {
+        return methodDesc;
     }
 
-    public void setMethodDescriptor(String methodDescriptor) {
-        this.methodDescriptor = methodDescriptor;
+    public void setMethodDesc(String methodDesc) {
+        this.methodDesc = methodDesc;
     }
 
     @Override
@@ -56,6 +56,6 @@ public class DistribMethod implements Serializable{
         DistribMethod distribMethod = (DistribMethod) other;
         return this.serviceInstance.equals(distribMethod.getServiceInstance())
                 && this.classFullName.equals(distribMethod.getClassFullName())
-                && this.methodDescriptor.equals(distribMethod.getMethodDescriptor());
+                && this.methodDesc.equals(distribMethod.getMethodDesc());
     }
 }

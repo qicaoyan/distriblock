@@ -1,4 +1,4 @@
-package com.ming.distriblock.client.client;
+package com.ming.distriblock.client.client.io;
 
 import com.ming.distriblock.core.ObjectHandler;
 import com.ming.distriblock.core.RequestDistrbLockInfo;
